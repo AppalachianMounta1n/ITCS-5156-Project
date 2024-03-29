@@ -13,4 +13,4 @@ MODEL="${1:-rdac}"
 #######
 #PS:: REMOVE --debug flag to actually train the models.
 #######
-python run.py --config config/${MODEL}.yaml --log_dir cpks/${MODEL} --debug
+python3 run.py --config config/${MODEL}.yaml --log_dir cpks/${MODEL} --debug
