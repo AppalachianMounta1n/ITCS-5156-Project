@@ -1,5 +1,7 @@
 # ITCS-5156-Project
-Repository for my final project for ITCS 5156 at UNC Charlotte.
+Repository for my final project for ITCS 5156 at UNC Charlotte. This repository is a recreation of [https://github.com/Goluck-Konuko/animation-based-codecs](https://github.com/Goluck-Konuko/animation-based-codecs) and contains the source code for the following papers: [ULTRA-LOW BITRATE VIDEO CONFERENCING USING DEEP IMAGE ANIMATION](https://arxiv.org/abs/2012.00346v1),
+[A HYBRID DEEP ANIMATION CODEC FOR LOW-BITRATE VIDEO CONFERENCING](https://arxiv.org/abs/2207.13530) and 
+[PREDICTIVE CODING FOR ANIMATION-BASED VIDEO COMPRESSION](https://arxiv.org/abs/2307.04187)
 
 ## Errors and Fixes
 - When running ``pip install -r requirements.txt`` for installing the project dependencies for the original code, an error occurs in which ``sklearn`` has been deprecated in the current stable release of Python3 and must be removed from the file. Since the replacement, ``scikit-learn``, is already in the ``requirements.txt`` file, this can be fixed by simply removing ``sklearn`` from the file.
