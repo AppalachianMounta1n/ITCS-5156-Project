@@ -15,7 +15,11 @@ Repository for my final project for ITCS 5156 at UNC Charlotte. This repository 
 
 ## Necessary File Structure For Replication
 - To begin, I believe it necessary to state that it seems as if the original creator hard-coded which datasets and filenames would be used for *any* training or functionality, so I will have to rewrite this if I wish to use additional datasets.
-- When run, the training script will search for a folder under ``/home/$USER/Documents`` called ``datasets``. Within this folder, the following folders with data must be placed: ``hevc_38``, ``hevc_40``, ``hevc_42``, ``hevc_46``, and ``hevc_50``. The file names within cannot be changed yet.
+- When run, the training script will search for a folder called ``datasets`` within the same directory as the code. Within this folder, the following folders with data must be placed: ``hevc_38``, ``hevc_40``, ``hevc_42``, ``hevc_46``, and ``hevc_50``. The file names within cannot be changed yet.
+- The original datasets are provided as ``hevc_38.tar.gz``, ``hevc_42.tar.gz``, ``hevc_46.tar.gz``, ``hevc_50.tar.gz``, and these will contain folders to be renamed. ``train`` and ``inference`` are the folders that will hold the training data and testing data respectively. ``hevc_50.tar.gz`` will decompress to ``train_hevc``, which must be renamed to ``hevc_50``. ``hevc_38.tar.gz`` and ``hevc_46.tar.gz`` will decompress to  ``out`` which must be renamed to 
+
+## Training The Model
+- To train the model, run the ``script_training.sh {model}`` Bash script from the source code. {model} should be equal to one of the models with a YAML file in the ``config`` folder. The supported options are ``dac``, ``hdac``, and ``rdac``.
 
 ## Source Links
 ### Original Code

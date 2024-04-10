@@ -21,3 +21,6 @@ fi
 if [ "$MODEL" = "rdac" ]; then
 python3 run.py --mode test --log_dir results --config config/${MODEL}.yaml --checkpoint checkpoints/rdac.pt
 fi
+
+
+
